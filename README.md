@@ -1,4 +1,6 @@
-Source: https://gist.github.com/JoeKarlsson1/27011b72338ff9aee901
+['Source Problem'](https://gist.github.com/JoeKarlsson1/27011b72338ff9aee901)
+
+['Public Website'](https://joekarlsson1.github.io/ascii-Christmas-Tree/)
 
 ##The Challenge
 

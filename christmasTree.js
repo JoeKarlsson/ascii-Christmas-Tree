@@ -1,48 +1,24 @@
-// var treeDiv = document.getElementById('tree');
+var branch = 1;
+var zeroes = "0";
+var treeHTML = document.getElementById("tree");
+var starHTML = document.getElementById("star");
+var trunkHTML = document.getElementById("trunk");
 
-// // h=10,p=console.log,m='0',a=Array(h-1),s=a.join(' ');p(s+'*\n'+s+m);while(h-->2){m+='00';a.pop();p(a.join(' ')+m);}
-// //
+// starHTML.innerHTML += "*";
+treeHTML.innerHTML += "*";
+function addBranches () {
 
-// /**
-//  * Long Form Christmas Tree Function
-//  * @param  {[num]} height of christmas tree.
-//  */
+  for ( var i = 1; i <= 10; i++ ) {
 
-// // function makeTree(height) {
-// //   var i = 0;
-// //   var h = height;
-// //   var a = new Array(h);
-// //   a[0] = a.join(' ');
-// //   var b = a.join('000');
-// //   a[0] += '*';
-// //   while ( i <= h ) {
-// //     var treeLine = document.createElement('p');
-// //     var newLine = document.createElement('br');
-// //     i++
-// //     a[i] = b.substr(i, h + i);
-// //     treeLine.innerHTML = a[i];
-// //     treeLine.appendChild(newLine);
-// //     treeDiv.appendChild(treeLine);
-// //   }
-// //   // a.push('| |');
-// //   var tree = a.join('\n');
-// //   // treeDiv.appendChild(treeLine);
-// //   console.log(tree)
-// // }
+    if (i > 1) {
+      branch +=2;
+      while (zeroes.length <= branch) {
+        zeroes += "0";
+      }
+    }
 
-// // makeTree(9);
-// function makeTree(height) {
-//   var a = [];
-//   var line = '0'
-//   a.push('*');
-//   a.push(line);
-//   for (var i = 2; i < height; i++) {
-//     line+='00';
-//     a.push(line);
-//   }
-//   var tree = a.join('\n');
-//   console.log(tree)
-// }
-
-// makeTree(9);
-
+    treeHTML.innerHTML += "<br />" + zeroes;
+  }
+}
+addBranches();
+trunkHTML.innerHTML += "||";
