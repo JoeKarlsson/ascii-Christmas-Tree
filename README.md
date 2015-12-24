@@ -4,6 +4,8 @@ Source: https://gist.github.com/JoeKarlsson1/27011b72338ff9aee901
 
 Write a function that prints a nice Christmas tree of any size to the DOM with it's own star at the top using the shortest code possible. The tree star is an asterisk (*), the tree body is made out of 0 The tree must be at least 10 rows high, and at the bottom of the tree should be a trunk made of 2 pipe characters (|). Every row should be properly indented in the way that the previous row are centered over the next one. Any given row must have 2 more 0s than the previous, except for the first one that is the star and the second, which has only one 0. The result is something like this:
 
+TEST
+
 
 ```
           *
